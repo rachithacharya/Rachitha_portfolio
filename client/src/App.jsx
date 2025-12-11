@@ -98,13 +98,13 @@ function App() {
               <a href="#projects" className="btn primary">
                 <i className="fas fa-chart-bar"></i> View Projects
               </a>
-              <a href="./src/assets/Rachitha_R_Acharya_Resume.pdf" target="_blank" rel="noreferrer" className="btn secondary">
+              <a href="/Rachitha_R_Acharya_Resume.pdf" target="_blank" rel="noreferrer" className="btn secondary">
                 <i className="fas fa-external-link-alt"></i> View Resume
               </a>
             </div>
             
             <div className="social-links">
-              <a href="https://github.com/" target="_blank" rel="noreferrer" 
+              <a href="https://github.com/rachithacharya" target="_blank" rel="noreferrer" 
                  aria-label="GitHub">
                 <i className="fab fa-github"></i>
               </a>
@@ -463,7 +463,7 @@ function App() {
           
           <div className="cta-section">
             <p>Want to see more projects?</p>
-            <a href="https://github.com/" className="btn primary">
+            <a href="https://github.com/rachithacharya" className="btn primary">
               <i className="fab fa-github"></i> Visit GitHub
             </a>
           </div>
@@ -659,7 +659,7 @@ function App() {
               <div className="social-connect-footer">
                 <p>Or connect on social media</p>
                 <div className="social-icons-footer">
-                  <a href="https://github.com/" target="_blank" rel="noreferrer" 
+                  <a href="https://github.com/rachithacharya" target="_blank" rel="noreferrer" 
                      className="social-icon-footer">
                     <i className="fab fa-github"></i>
                   </a>
