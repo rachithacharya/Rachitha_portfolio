@@ -46,6 +46,21 @@ body {
   padding: 0 24px;
 }
 
+.mobile-menu-toggle {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  color: var(--text-primary);
+  cursor: pointer;
+  padding: 8px;
+  transition: color 0.2s ease;
+}
+
+.mobile-menu-toggle:hover {
+  color: var(--primary);
+}
+
 /* NAVBAR */
 .navbar {
   position: sticky;
@@ -1091,6 +1106,29 @@ body {
 @media (max-width: 768px) {
   .nav-links {
     display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background: white;
+    flex-direction: column;
+    padding: 20px;
+    box-shadow: var(--shadow-md);
+    border-top: 1px solid var(--border);
+  }
+  
+  .nav-links.active {
+    display: flex;
+  }
+  
+  .mobile-menu-toggle {
+    display: block;
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    color: var(--text-primary);
+    cursor: pointer;
+    padding: 8px;
   }
   
   .section {
@@ -1127,6 +1165,16 @@ body {
     font-size: 1.75rem;
   }
   
+  .hero-subtitle {
+    font-size: 1rem;
+  }
+  
+  .hero-stats {
+    flex-direction: column;
+    gap: 16px;
+    align-items: center;
+  }
+  
   .btn {
     width: 100%;
     justify-content: center;
@@ -1134,6 +1182,42 @@ body {
   
   .hero-actions {
     flex-direction: column;
+  }
+  
+  .container {
+    padding: 0 16px;
+  }
+  
+  .section {
+    padding: 40px 0;
+  }
+  
+  .section-title {
+    font-size: 1.75rem;
+  }
+  
+  .profile-card {
+    padding: 16px;
+  }
+  
+  .contact-section .section-title {
+    font-size: 2rem;
+  }
+
+  .info-card-icon {
+    width: 60px;
+    height: 60px;
+    font-size: 1.5rem;
+  }
+
+  .social-icons-large {
+    gap: 12px;
+  }
+
+  .social-icon-large {
+    width: 48px;
+    height: 48px;
+    font-size: 1.3rem;
   }
 }
 .contact-card-button {

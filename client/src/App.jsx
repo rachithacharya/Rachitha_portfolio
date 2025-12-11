@@ -1,8 +1,10 @@
 import "./index.css";
 import { useState, useEffect } from "react";
+import rachithaImg from "./assets/rachitha.jpg";
 
 function App() {
   const [activeSection, setActiveSection] = useState("home");
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -36,14 +38,17 @@ function App() {
             <span className="logo-accent">R</span>achitha
             <span className="logo-accent">  A</span>charya
           </div>
-          <ul className="nav-links">
-            <li><a href="#home" className={activeSection === "home" ? "active" : ""}>Home</a></li>
-            <li><a href="#about" className={activeSection === "about" ? "active" : ""}>About</a></li>
-            <li><a href="#skills" className={activeSection === "skills" ? "active" : ""}>Skills</a></li>
-            <li><a href="#projects" className={activeSection === "projects" ? "active" : ""}>Projects</a></li>
-            <li><a href="#experience" className={activeSection === "experience" ? "active" : ""}>Experience</a></li>
-            <li><a href="#education" className={activeSection === "education" ? "active" : ""}>Education</a></li>
-            <li><a href="#contact" className={activeSection === "contact" ? "active" : ""}>Contact</a></li>
+          <button className="mobile-menu-toggle" onClick={() => setMobileMenuOpen(!mobileMenuOpen)}>
+            <i className={`fas ${mobileMenuOpen ? 'fa-times' : 'fa-bars'}`}></i>
+          </button>
+          <ul className={`nav-links ${mobileMenuOpen ? 'active' : ''}`}>
+            <li><a href="#home" className={activeSection === "home" ? "active" : ""} onClick={() => setMobileMenuOpen(false)}>Home</a></li>
+            <li><a href="#about" className={activeSection === "about" ? "active" : ""} onClick={() => setMobileMenuOpen(false)}>About</a></li>
+            <li><a href="#skills" className={activeSection === "skills" ? "active" : ""} onClick={() => setMobileMenuOpen(false)}>Skills</a></li>
+            <li><a href="#projects" className={activeSection === "projects" ? "active" : ""} onClick={() => setMobileMenuOpen(false)}>Projects</a></li>
+            <li><a href="#experience" className={activeSection === "experience" ? "active" : ""} onClick={() => setMobileMenuOpen(false)}>Experience</a></li>
+            <li><a href="#education" className={activeSection === "education" ? "active" : ""} onClick={() => setMobileMenuOpen(false)}>Education</a></li>
+            <li><a href="#contact" className={activeSection === "contact" ? "active" : ""} onClick={() => setMobileMenuOpen(false)}>Contact</a></li>
           </ul>
         </div>
       </nav>
@@ -93,8 +98,8 @@ function App() {
               <a href="#projects" className="btn primary">
                 <i className="fas fa-chart-bar"></i> View Projects
               </a>
-              <a href="/Rachitha_CV.pdf" download className="btn secondary">
-                <i className="fas fa-download"></i> Download Resume
+              <a href="./src/assets/Rachitha_R_Acharya_Resume.pdf" target="_blank" rel="noreferrer" className="btn secondary">
+                <i className="fas fa-external-link-alt"></i> View Resume
               </a>
             </div>
             
@@ -103,7 +108,7 @@ function App() {
                  aria-label="GitHub">
                 <i className="fab fa-github"></i>
               </a>
-              <a href="https://linkedin.com/in/rachitha-acharya-44233a225" target="_blank" rel="noreferrer"
+              <a href="https://linkedin.com/in/rachitha-acharya-44253a255" target="_blank" rel="noreferrer"
                  aria-label="LinkedIn">
                 <i className="fab fa-linkedin"></i>
               </a>
@@ -115,7 +120,7 @@ function App() {
 
           <div className="hero-right">
             <div className="profile-card float-card">
-              <img src="/src/assets/rachitha.jpg" alt="Rachitha Acharya" title="Rachitha Acharya - Data Science Professional" className="profile-img profile-img-small" />
+              <img src={rachithaImg} alt="Rachitha Acharya" title="Rachitha Acharya - Data Science Professional" className="profile-img profile-img-small" />
               <div className="profile-overlay">
                 <div className="profile-info">
                   <div className="info-item">
@@ -658,7 +663,7 @@ function App() {
                      className="social-icon-footer">
                     <i className="fab fa-github"></i>
                   </a>
-                  <a href="https://linkedin.com/in/rachitha-acharya-44233a225" target="_blank" rel="noreferrer" 
+                  <a href="https://linkedin.com/in/rachitha-acharya-44253a255" target="_blank" rel="noreferrer" 
                      className="social-icon-footer">
                     <i className="fab fa-linkedin"></i>
                   </a>
@@ -676,7 +681,7 @@ function App() {
 
       <footer className="footer">
         <div className="container footer-content">
-          <p>© {new Date().getFullYear()} Rachitha Acharya • Built with React</p>
+          <p>© {new Date().getFullYear()} Rachitha Acharya</p>
           <div className="footer-links">
             <a href="#home">Back to top <i className="fas fa-arrow-up"></i></a>
           </div>
