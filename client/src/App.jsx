@@ -663,10 +663,10 @@ function App() {
                      className="social-icon-footer">
                     <i className="fab fa-linkedin"></i>
                   </a>
-                  <a href="https://twitter.com/" target="_blank" rel="noreferrer" 
+                  {/* <a href="https://twitter.com/" target="_blank" rel="noreferrer" 
                      className="social-icon-footer">
                     <i className="fab fa-twitter"></i>
-                  </a>
+                  </a> */}
                 </div>
               </div>
             </div>
