@@ -112,7 +112,7 @@ function App() {
                  aria-label="LinkedIn">
                 <i className="fab fa-linkedin"></i>
               </a>
-              <a href="mailto:rachithaacharya18@gmail.com" aria-label="Email">
+              <a href="mailto:rachithacharya18@gmail.com" aria-label="Email">
                 <i className="fas fa-envelope"></i>
               </a>
             </div>
@@ -132,10 +132,6 @@ function App() {
                     <span>Open to opportunities</span>
                   </div>
                 </div>
-              </div>
-              <div className="availability-badge">
-                <span className="status-dot"></span>
-                Available for Hire
               </div>
             </div>
           </div>
@@ -626,7 +622,7 @@ function App() {
             <div className="contact-right-side">
               <div className="contact-options">
                 <a 
-                  href="mailto:rachithaacharya18@gmail.com?subject=Portfolio Inquiry&body=Hi Rachitha,%0D%0A%0D%0AI came across your portfolio and would like to connect..."
+                  href="mailto:rachithacharya18@gmail.com?subject=Portfolio Inquiry&body=Hi Rachitha,%0D%0A%0D%0AI came across your portfolio and would like to connect..."
                   className="contact-option-card email-card"
                 >
                   <div className="contact-option-icon">
@@ -634,7 +630,7 @@ function App() {
                   </div>
                   <div className="contact-option-content">
                     <h3>Email Me</h3>
-                    <p>rachithaacharya18@gmail.com</p>
+                    <p>rachithacharya18@gmail.com</p>
                     <span className="contact-action">Click to send email <i className="fas fa-arrow-right"></i></span>
                   </div>
                 </a>
